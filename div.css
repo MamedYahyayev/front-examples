@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 85%;
+    min-width: 300px;
+    min-height: 200px;
+    display: block;
+    margin: auto;
+}
+
+span {
+    color: crimson;
+}
+
+.container {
+    max-width: 95%;
+    width: 1400px;
+    background-color: #efefef;
+    margin: auto;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.col-h1 {
+    font-size: 2rem;
+    text-align: start;
+}
+
+.img-col {
+    width: 30%;
+}
+
+.img-col img {
+    width: 100%;
+    min-width: 220px;
+    height: 274px;
+    border-radius: 20px;
+}
+
+.buy-tour {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background: radial-gradient(#dc143c, #7b5757);
+    box-shadow: 3px 4px black;
+    color: #efebeb;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 220px;
+    outline: none;
+    margin: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .column-img {
+        display: block;
+    }
+    .img-col {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .img-col img {
+        width: 85%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        display: block;
+    }
+    .col {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        display: block;
+    }
+    .col {
+        margin: auto;
+        width: 100%;
+    }
+    .img-col {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .img-col img {
+        width: 95%;
+        height: 300px;
+    }
+}

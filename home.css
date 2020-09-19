@@ -1,0 +1,73 @@
+.apartment {
+    border: 1px solid red;
+    height: 850px;
+    width: 45%;
+    margin: 25px auto;
+}
+
+.apartment-header {
+    position: relative;
+}
+
+.apartment-triangle {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 250px solid chocolate;
+    margin: 0 auto;
+}
+
+.apartment-baca {
+    width: 30px;
+    background-color: aqua;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 310px;
+    z-index: -1;
+}
+
+.apartment-section {
+    width: 70%;
+    background-color: blue;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.windows {
+    width: 25%;
+    height: 99px;
+    background-color: #cbd22ddb;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+    margin: 10px;
+}
+
+.curtains1 {
+    width: 30%;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+    border-bottom-right-radius: 60px;
+    position: absolute;
+    left: 0;
+}
+
+.curtains2 {
+    width: 30%;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+    border-bottom-left-radius: 60px;
+    position: absolute;
+    right: 0;
+}
+
+.doors {
+    margin: 0;
+    background-color: chocolate;
+}

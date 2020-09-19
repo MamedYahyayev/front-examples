@@ -1,0 +1,66 @@
+body {
+    background-color: rgba(121, 5, 141, 0.52);
+}
+
+.courses {
+    width: 400px;
+    height: 325px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 24px;
+    margin-bottom: 12px;
+}
+
+.courses:hover {
+    box-shadow: 4px 4px gainsboro;
+    cursor: pointer;
+}
+
+.courses img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 400px;
+    height: 200px;
+}
+
+.courses h1 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.courses p {
+    font-family: "Courier New", Courier, monospace;
+    padding-left: 4px;
+    padding-top: 10px;
+    text-align: justify;
+    padding-right: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(6, 52, 93);
+    height: 80px;
+}
+
+header h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+}
+
+* {
+    margin: 0;
+}

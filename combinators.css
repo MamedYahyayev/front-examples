@@ -1,0 +1,7 @@
+article>p {
+    color: red;
+}
+
+article~p {
+    color: green;
+}

@@ -1,0 +1,54 @@
+@import "variables";
+@import "button";
+
+@mixin div($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin p($color1, $color2, $color3) {
+  #p1 {
+    color: $color1;
+  }
+  #p2 {
+    color: $color2;
+  }
+  #p3 {
+    color: $color3;
+  }
+}
+
+.div {
+  background-color: $bg-color;
+  @include div(400px, 500px);
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  opacity: 0.5;
+
+  h1 {
+    color: $text-color;
+  }
+}
+
+#second-div {
+  background-color: $second_div_bg_color;
+  @include div(200px, 100px);
+  font-size: large;
+}
+
+.p {
+  @include p(blue, red, green);
+}
+
+.first-div {
+  background-color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+.second-div {
+  @extend .first-div;
+  background-color: green;
+  margin-top: 10px;
+}

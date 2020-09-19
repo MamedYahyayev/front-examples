@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div,
+      #div1 {
+        width: 800px;
+        height: 800px;
+        border: 1px solid red;
+        text-align: center;
+      }
+
+      #div {
+        color: red;
+      }
+
+      #div1 {
+        color: aqua;
+      }
+      #p {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+    <p ondragstart="drag(event)" draggable="true" id="p">
+      Lorem ipsum dolor sit amet.
+    </p>
+
+    <div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+    <script src="drag.js"></script>
+  </body>
+</html>

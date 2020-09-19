@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    margin-right: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    top: 6px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#dropdown-menu {
+    position: relative;
+    top: -6px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#google-logo {
+    width: 272px;
+    height: 92px;
+    margin: auto;
+    display: block;
+    padding-top: 150px;
+}
+
+#text {
+    width: 100%;
+    padding: 14px;
+    margin-top: 24px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+}
+
+#text:hover {
+    box-shadow: 2px 4px whitesmoke;
+}
+
+#text:focus {
+    box-shadow: 2px 4px whitesmoke;
+}
+
+#search-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#input {
+    position: relative;
+    width: 582px;
+    margin: auto;
+}
+
+#voice-icon {
+    position: absolute;
+    top: 38px;
+    right: 0;
+}
+
+.buttons {
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    left: 42%;
+    outline: none;
+    margin-right: 12px;
+    width: 145px;
+}
+
+#button-wrap {
+    margin-top: 20px;
+}
