@@ -1,0 +1,62 @@
+body {
+  margin: 500px 300px;
+}
+
+.transition-element {
+  width: 300px;
+  height: 300px;
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  transition: width 3s, height 3s, line-height 3s, transform 4s;
+}
+
+.transition-element:hover {
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  transform: translateX(400px);
+}
+
+.transition-timing {
+  margin: 90px;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(117, 117, 248);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  transition: width 2s, height 2s, line-height 2s, transform 2s;
+  transition-delay: 3s;
+}
+
+.transition-timing:hover {
+  transition-timing-function: linear;
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  transform: translateX(400px);
+}
+
+.transition-shorthand {
+  margin: 90px;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(117, 117, 248);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  transition: transform 4s, width 4s, height 1s, line-height 6s linear 3s;
+}
+
+.transition-shorthand:hover {
+  transition: transform 2s, width 1s, height 1s, line-height 2s linear 2s;
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  transform: translateX(400px);
+}
