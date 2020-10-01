@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(206, 206, 206);
+    
+}
+
+a.active {
+    color: white;
+    background-color: rgb(37, 161, 37);
+    border: 1px solid #4CAF50;
+}

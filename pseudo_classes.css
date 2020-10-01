@@ -1,0 +1,148 @@
+/* Pseudo HOVER  */
+.pseudo-hover {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.pseudo-hover:hover {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  color: white;
+}
+
+/* Checked */
+#checkbox:checked {
+  width: 200px;
+  height: 200px;
+}
+
+/* Disabled */
+#disabled-input:disabled {
+  cursor: not-allowed;
+  background-color: #aaa;
+}
+
+#focus-input {
+  width: 20px;
+  transition: width 0.8s;
+}
+
+/* Focus */
+#focus-input:focus {
+  outline: none;
+  width: 200px;
+}
+
+/* Empty */
+p:empty {
+  width: 100px;
+  height: 20px;
+  background-color: aqua;
+}
+
+/* Enabled  */
+.disabled input:enabled {
+  background-color: orange;
+}
+
+.first-child-selector p:first-child {
+  color: white;
+  background-color: purple;
+}
+
+.child-selector-ul > :first-child {
+  color: white;
+  background-color: purple;
+}
+
+.first-child-type-selector p:first-of-type {
+  color: white;
+  background-color: purple;
+}
+
+input[type="number"]:in-range {
+  border: 1px solid black;
+}
+
+input[type="number"] {
+  border: 1px solid red;
+}
+
+input[type="email"] {
+  outline: none;
+}
+
+input[type="email"]:invalid {
+  outline: none;
+  border-color: red;
+  box-sizing: border-box;
+}
+
+.last-child-selector p:last-child {
+  color: white;
+  background-color: purple;
+}
+
+.last-child-type-selector p:last-of-type {
+  color: white;
+  background-color: purple;
+}
+
+.nth-child-selector p:nth-child(4n + 1) {
+  color: white;
+  background-color: purple;
+}
+
+.only-of-child-selector:only-of-type {
+  color: white;
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+}
+
+.nth-of-type-selector:nth-of-type(6) {
+  background-color: red;
+}
+
+.input-opt:optional {
+  background-color: green;
+}
+
+.input-placeholder input::placeholder {
+  color: aqua;
+}
+
+.read-only-input input:read-only {
+  background-color: purple;
+}
+
+.read-only-input input:read-write {
+  background-color: gold;
+}
+
+:root {
+  background-color: lightblue;
+}
+
+
+::selection {
+  color: white;
+  background-color: rgb(27, 163, 27);
+}
+
+
+#p-tag::selection {
+  color: white;
+  background-color: rgb(60, 121, 212);
+}
+
+:traget {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+.valid-input {
+  background-color: coral;
+}
