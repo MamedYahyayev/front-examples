@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="home-page">
+      <h1>Instruction</h1>
+      <p>Total number of questions:<span id="question-count">5</span></p>
+      <button class="btn" id="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <div class="question-page">
+      <div class="question-number">
+        <h3 id="questionNumber">Question 1 of 5</h3>
+      </div>
+      <div class="question-section">
+        <p class="question">2 + 2 = ?</p>
+        <div class="answer">
+          
+        </div>
+        <button class="btn" onclick="nextQuestion()">Next</button>
+      
+      <div class="answers-view">
+        <div class="answer-circle"></div>
+        <div class="answer-circle"></div>
+        <div class="answer-circle"></div>
+        <div class="answer-circle"></div>
+        <div class="answer-circle"></div>
+      </div>
+    </div>
+
+    <div class="result-page hide">
+      <h1>Quiz Result</h1>
+      <div>
+        <table class="result-table">
+          <tr>
+            <td>Total Question</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Attempt</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Correct</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Wrong</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Percentage</td>
+            <td>60.00%</td>
+          </tr>
+          <tr>
+            <td>Total Score</td>
+            <td>3 / 5</td>
+          </tr>
+        </table>
+        <div class="btn-section">
+          <button class="btn result-btn">Try Again</button>
+          <button class="btn result-btn">Go to Home</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
