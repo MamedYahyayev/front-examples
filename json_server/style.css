@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employees__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.employee__box {
+  font-size: 18px;
+  width: 20%;
+  background-color: #ccc;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
