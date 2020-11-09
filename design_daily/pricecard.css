@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #ceceeb;
+}
+
+.price__card {
+  margin: 50px auto;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 400px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.price__card-header {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.price__card-header h3 {
+  font-size: 30px;
+}
+.price__card-header p {
+  color: #7c8494;
+  font-size: 20px;
+}
+
+.price__card-price {
+  font-size: 50px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.price__card-features {
+  margin-bottom: 100px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.price__card-footer {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #242c44;
+  padding: 15px 60px;
+  border-radius: 40px;
+}
+
+.colorChange {
+  padding: 20px 20px;
+  background-color: #242c44;
+  width: fit-content;
+  color: white;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.colorChange:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+
+.themeText {
+  text-align: center;
+  font-family: inherit;
+}
+
+.price__card.dark {
+  background-color: #242c44;
+  color: white;
+}
+
+.price__card-footer.dark {
+  color: black;
+  background-color: #fff;
+}
