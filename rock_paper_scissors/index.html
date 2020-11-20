@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="startgame">Start the game</button>
+    <div class="game">
+      <h1 class="player-section-header">Make your choice</h1>
+      <div class="player-section">
+        <div class="choice paper">Paper</div>
+        <div class="choice rock">Rock</div>
+        <div class="choice scissors">Scissors</div>
+      </div>
+
+      <div class="game-section">
+        <div class="game-section-header">
+          <h1>Player</h1>
+          <h1>Computer</h1>
+        </div>
+        <div class="game-section-content">
+          <p>Player Choice: <span class="pChoice"></span></p>
+          <h1>VS</h1>
+          <p>Computer Choice: <span class="cChoice"></span></p>
+        </div>
+        <button class="fightbutton">FIGHT</button>
+        <div class="game-section-result">
+          Result: <span class="result-text"></span>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop" />
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.startgame {
+  background-color: aqua;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.game {
+  width: 800px;
+  height: 800px;
+  border: 1px solid red;
+  margin: 100px auto;
+}
+
+.player-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-section-header {
+  font-size: 40px;
+  color: gray;
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+  padding: 40px;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+.paper {
+  background-color: purple;
+  color: white;
+}
+
+.rock {
+  background-color: rgb(17, 185, 241);
+  color: white;
+}
+.scissors {
+  background-color: coral;
+  color: white;
+}
+
+.choice:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform: translateY(-5px);
+}
+
+.game-section {
+  margin-top: 20px;
+  border-top: 50px solid black;
+}
+
+.game-section-header {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.game-section-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.game-section-result {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 80px;
+  color: brown;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fightbutton {
+  background-color: red;
+  padding: 20px 40px;
+  margin: 40px auto;
+  display: block;
+}
