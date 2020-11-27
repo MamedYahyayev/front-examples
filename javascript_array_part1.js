@@ -36,7 +36,7 @@ let arrayName = names.entries();
 
 console.log(arrayName); // Array Iterator {}
 
-for (i of arrayName) {
+for (let i of arrayName) {
   console.log(i);
 }
 
