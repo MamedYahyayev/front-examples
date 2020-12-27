@@ -1,0 +1,43 @@
+#scroll-element {
+  width: 400px;
+  height: 200px;
+  background-color: coral;
+  overflow-y: scroll;
+  margin: 200px;
+  border: 1px solid red;
+}
+
+#tooltip-parent {
+  width: 600px;
+  height: 400px;
+  margin: 200px 100px;
+  border: 10px solid coral;
+  background-color: green;
+  overflow-y: scroll;
+}
+
+.box {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.box > button {
+  padding: 18px 30px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: inherit;
+}
+
+.toolTip {
+  border: 1px solid lightblue;
+  width: 550px;
+  position: absolute;
+  background-color: lightblue;
+  margin: 10px auto;
+}
