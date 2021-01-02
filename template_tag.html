@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+  </head>
+  <body>
+    <template id="template">
+      <h1>This is template</h1>
+      <p></p>
+    </template>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+        ullam, dolorem similique quae cum aspernatur obcaecati eos deleniti
+        tempora voluptate sint commodi voluptates dicta? Eligendi.
+      </p>
+    </div>
+
+    <script>
+      // Template tags doesn't visible in html
+      const template = document.getElementById("template");
+      const templateBody = document.importNode(template.content, true);
+      templateBody.querySelector("p").textContent = "Hello From Template";
+
+      // add template content to the body
+      const body = document.body;
+      body.append(templateBody);
+    </script>
+  </body>
+</html>
