@@ -29,6 +29,22 @@ console.log("Window Inner Height: ", window.innerHeight);
 // this is the window object's width
 console.log("Window Inner Width: ", window.innerWidth);
 
+// this scroll's the object x = 0 , y = 20
+scrollableDiv.scrollTo(0 , 20);
+
+// this scroll's the object x = 0px , y = 20px
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+scrollableDiv.scrollBy(0 , 20);
+// if a call scrollBy multiple times this add 20 px to y axis
+// If I call the scrollTop method after scrollBy, it will take me to the address defined in 
+//the scrollTo method, It doesn't matter where the scroll is 
+
+
 // Positioning Tooltip
 const boxParent = document.getElementById("tooltip-parent");
 
