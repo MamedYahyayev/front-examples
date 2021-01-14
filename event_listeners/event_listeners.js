@@ -7,7 +7,7 @@ document.addEventListener(
   () => {
     console.log("Document Capturing");
   },
-  { capture: true }
+  { capture: true, once: true }
 );
 
 grandParent.addEventListener(
@@ -26,10 +26,28 @@ parent.addEventListener(
   { capture: true }
 );
 
-child.addEventListener("click", (e) => {
+child.addEventListener("click", printChildMessage);
+
+child.removeEventListener("click", printChildMessage);
+
+function printChildMessage(e) {
   console.log("Child");
   e.stopPropagation();
+}
+
+const divs = document.querySelectorAll("div");
+
+document.addEventListener("click", (e) => {
+  if (e.target.matches("div")) {
+    console.log("This is a div");
+  }
 });
+
+const newDiv = document.createElement('div');
+newDiv.style.width = '200px';
+newDiv.style.height = '200px';
+newDiv.style.background = 'coral';
+document.body.append(newDiv);
 
 /**
  *  Event Bubbling
@@ -53,7 +71,18 @@ child.addEventListener("click", (e) => {
  *   and then if we don't have another capture event, the JS calls bubbling events
  *
  *    stopPropagation() method , this method stops to call other bubbling elements automatically. For example we have 4 elements
- *    document , grandparent, parent , child. if we call this method in child event, other parent bubbling events won't called. 
+ *    document , grandparent, parent , child. if we call this method in child event, other parent bubbling events won't called.
+ *
+ *    Call event once.
+ *    We can add another property to object which this object is the third parameter in Event Listeners. just add (once:true) and
+ *    you can see this event only call once.
+ *
+ *    Remove Event Listeners
+ *    we can use removeEventListeners() to remove event listeners.
+ *
+ *    Event Delegation
+ *    Let's imagine we have 3 divs and each divs has parent and each div has event. If we add another div after add event listener this new div will hasn't event
+ *    in this situtation we can use event.target.matches('<selector_name>').
  *
  *
  */
