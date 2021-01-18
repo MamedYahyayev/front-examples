@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <style>
+      :root {
+        font-size: 10px;
+        --purple-color: purple;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .post {
+        padding: 0px 10px;
+        margin: 10px;
+        border: 1px solid #aaa;
+      }
+
+      .post h1 {
+        font-size: 2rem;
+        color: var(--purple-color);
+      }
+
+      .post p {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        margin: 10px 0;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: var(--purple-color);
+      }
+
+      .btn--large {
+        font-size: 3rem;
+      }
+
+      .btn--small {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post">
+      <h1>Document</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        aliquam ullam adipisci enim sapiente! Quisquam tenetur vel aperiam hic
+        fuga voluptatibus architecto ullam esse laborum, commodi voluptas totam
+        sequi laudantium a debitis sit culpa. Nihil aliquid tempora fugit
+        tempore quibusdam.
+      </p>
+      <button class="btn btn--small">More Info</button>
+    </div>
+
+    <div class="post">
+      <h1>Javascript</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        aliquam ullam adipisci enim sapiente! Quisquam tenetur vel aperiam hic
+        fuga voluptatibus architecto ullam esse laborum, commodi voluptas totam
+        sequi laudantium a debitis sit culpa. Nihil aliquid tempora fugit
+        tempore quibusdam.
+      </p>
+      <button class="btn btn--large">More Info</button>
+    </div>
+
+    <button class="btn btn--large" id="justClickMe">Just Click me</button>
+  </body>
+</html>
