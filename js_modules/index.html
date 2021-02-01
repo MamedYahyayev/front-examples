@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer type="module"></script>
+    <style>
+      .students {
+        background: coral;
+        padding: 2em;
+        margin: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" />
+
+      <label for="surname">Surname:</label>
+      <input id="surname" type="text" name="surname" />
+
+      <button id="add-student" type="submit">Add Student</button>
+    </form>
+
+    <section class="students"></section>
+  </body>
+</html>
