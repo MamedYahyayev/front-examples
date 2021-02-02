@@ -31,9 +31,9 @@ function addStudent() {
  *  This is very helpful for increase performance.
  */
 
- /**
-  *  globalThis this element very useful when we use modules. and this element using instead of window object, 
-  *  For example i want to send function or data to other js files without using import export, i can use globalThis 
-  *  element to add functions or data to window object and this element available on the global and other js files can see
-  *  their data or functions easily.
-  */
+/**
+ *  globalThis this element very useful when we use modules. and this element using instead of window object,
+ *  For example i want to send function or data to other js files without using import export, i can use globalThis
+ *  element to add functions or data to window object and this element available on the global and other js files can see
+ *  their data or functions easily.
+ */
