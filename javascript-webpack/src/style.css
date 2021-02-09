@@ -1,0 +1,66 @@
+:root {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-form {
+  width: 400px;
+  font-size: 1.9rem;
+  display: grid;
+  margin: 20px 0;
+}
+
+#user-form input {
+  width: 200px;
+  outline: none;
+  height: 20px;
+}
+
+#user-area {
+  width: 400px;
+  font-size: 1.7rem;
+  background-color: purple;
+  color: white;
+  padding: 0.8em;
+}
+
+#add-user-btn {
+  font-size: 2rem;
+  background-color: rgb(255, 208, 80);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 150px;
+}
+
+#fetch-users-btn {
+  font-size: 2rem;
+  background-color: rgb(255, 208, 80);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.users {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 1.3em;
+  border: 1px solid #ccc;
+  margin: 10px;
+}

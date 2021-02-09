@@ -1,0 +1,16 @@
+{
+  "name": "javascript-webpack",
+  "version": "1.0.0",
+  "description": "Javascript Webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mamed Yahyayev",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
