@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Storage</title>
+    <script src="local-session-storage.js" defer></script>
+    <script src="cookie.js" defer></script>
+    <style>
+      :root {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .btn {
+        font-size: 2rem;
+        border: none;
+        outline: none;
+        padding: 0.5em 0.8em;
+        margin: 1em;
+        border-radius: 10px;
+        background-color: indianred;
+        color: white;
+      }
+
+      #store-btn {
+        background-color: aqua;
+        color: black;
+      }
+
+      #retrieve-btn {
+        background-color: greenyellow;
+        color: black;
+      }
+
+      .cookie {
+        background-color: blueviolet;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <button class="btn" id="store-btn">Store Data LS</button>
+      <button class="btn" id="retrieve-btn">Retrieve Data LS</button>
+
+      <button class="btn" id="store-btn-ss">Store Data SS</button>
+      <button class="btn" id="retrieve-btn-ss">Retrieve Data SS</button>
+
+      <button class="btn cookie" id="store-btn-cookie">
+        Store Data Cookie
+      </button>
+      <button class="btn cookie" id="retrieve-btn-cookie">
+        Retrieve Data Cookie
+      </button>
+    </div>
+  </body>
+</html>
