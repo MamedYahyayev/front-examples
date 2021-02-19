@@ -15,7 +15,6 @@ export default class {
   detach() {
     if (this.element) {
       this.element.remove();
-      // this.element.parentElement.removeChild(this.element);
     }
   }
 
