@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "build:dev": "webpack serve --mode=development"
   },
   "author": "Mamed Yahyayev",
   "license": "ISC",
