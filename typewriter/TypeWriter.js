@@ -14,20 +14,21 @@
  *
  */
 
-class TypeWriter {
+export class TypeWriter {
+  #CURRENT_WORD = "";
+  #TYPEWRITER_SPEED = 200;
+  #DELAY = 2000;
+
   constructor(typingWords, typingWordElement) {
     this.typingWords = typingWords;
-    this.CURRENT_WORD = "";
-    this.TYPEWRITER_SPEED = 200;
-    this.DELAY = 2000;
-    this.handleTypingWordElement(typingWordElement);
+    this.#handleTypingWordElement(typingWordElement);
   }
 
   /**
    * this method selects specific DOM element which you entered
    * @param {*} typingWordElement this element may be a class or an id element
    */
-  handleTypingWordElement(typingWordElement) {
+  #handleTypingWordElement(typingWordElement) {
     const identifier = typingWordElement.charAt(0);
     let typingWordEl = "";
     if (identifier === "#") {
@@ -45,19 +46,19 @@ class TypeWriter {
    */
   handleTyping() {
     if (this.typingWordEl.textContent) {
-      this.CURRENT_WORD = this.typingWordEl.textContent;
-      this.removeLetter();
+      this.#CURRENT_WORD = this.typingWordEl.textContent;
+      this.#removeLetter();
     } else {
-      this.insertLetter();
+      this.#insertLetter();
     }
 
-    setTimeout(() => this.handleTyping(), this.DELAY);
+    setTimeout(() => this.handleTyping(), this.#DELAY);
   }
 
   /**
    *  This method removes letters one by one from the DOM element you specify
    */
-  removeLetter() {
+  #removeLetter() {
     const removeLetterInterval = setInterval(() => {
       if (this.typingWordEl.textContent) {
         const letter = this.typingWordEl.textContent.split("");
@@ -66,14 +67,14 @@ class TypeWriter {
       } else {
         clearInterval(removeLetterInterval);
       }
-    }, this.TYPEWRITER_SPEED);
+    }, this.#TYPEWRITER_SPEED);
   }
 
   /**
    *  This method inserts letters one by one to the DOM element you specify
    */
-  insertLetter() {
-    const index = this.findWordIndexInArray();
+  #insertLetter() {
+    const index = this.#findWordIndexInArray();
     const word = this.typingWords[index];
     const letter = word.split("");
     const insertLetterInterval = setInterval(() => {
@@ -84,27 +85,21 @@ class TypeWriter {
       } else {
         clearInterval(insertLetterInterval);
       }
-    }, this.TYPEWRITER_SPEED);
+    }, this.#TYPEWRITER_SPEED);
   }
 
   /**
    *  this method finds index of words in typingWords array and then return it
    */
-  findWordIndexInArray() {
+  #findWordIndexInArray() {
     const index = this.typingWords.findIndex(
-      (word) => this.CURRENT_WORD === word
+      (word) => this.#CURRENT_WORD === word
     );
     if (index === this.typingWords.length - 1) {
-      this.CURRENT_WORD = this.typingWords[0];
+      this.#CURRENT_WORD = this.typingWords[0];
       return 0;
     }
-    this.CURRENT_WORD = this.typingWords[index + 1];
+    this.#CURRENT_WORD = this.typingWords[index + 1];
     return index + 1;
   }
 }
-
-const typeWriter = new TypeWriter(
-  ["Salam", "Necesen", "Neynirsen"],
-  "#typing-word"
-);
-typeWriter.handleTyping();
