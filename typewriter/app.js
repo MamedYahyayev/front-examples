@@ -1,4 +1,4 @@
-/**
+/*
  * 1. Select dom elements which is span ✔
  * 2. create words array ✔
  * 3. create global element which is CURRENT_WORD ✔
@@ -23,6 +23,10 @@ class TypeWriter {
     this.handleTypingWordElement(typingWordElement);
   }
 
+  /**
+   * this method selects specific DOM element which you entered
+   * @param {*} typingWordElement this element may be a class or an id element
+   */
   handleTypingWordElement(typingWordElement) {
     const identifier = typingWordElement.charAt(0);
     let typingWordEl = "";
@@ -35,6 +39,10 @@ class TypeWriter {
     }
   }
 
+  /**
+   *  This method helps you type if you have textContent in your dom element, first deletes the text and
+   *  then  inserts letter one by one
+   */
   handleTyping() {
     if (this.typingWordEl.textContent) {
       this.CURRENT_WORD = this.typingWordEl.textContent;
@@ -46,6 +54,9 @@ class TypeWriter {
     setTimeout(() => this.handleTyping(), this.DELAY);
   }
 
+  /**
+   *  This method removes letters one by one from the DOM element you specify
+   */
   removeLetter() {
     const removeLetterInterval = setInterval(() => {
       if (this.typingWordEl.textContent) {
@@ -58,6 +69,9 @@ class TypeWriter {
     }, this.TYPEWRITER_SPEED);
   }
 
+  /**
+   *  This method inserts letters one by one to the DOM element you specify
+   */
   insertLetter() {
     const index = this.findWordIndexInArray();
     const word = this.typingWords[index];
@@ -73,6 +87,9 @@ class TypeWriter {
     }, this.TYPEWRITER_SPEED);
   }
 
+  /**
+   *  this method finds index of words in typingWords array and then return it
+   */
   findWordIndexInArray() {
     const index = this.typingWords.findIndex(
       (word) => this.CURRENT_WORD === word
