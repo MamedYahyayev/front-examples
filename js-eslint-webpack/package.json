@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build:dev": "webpack serve --mode=development"
+    "build:dev": "webpack serve --mode=development",
+    "build:prod": "webpack --config webpack.config.prod.js"
   },
   "author": "Mamed Yahyayev",
   "license": "ISC",
