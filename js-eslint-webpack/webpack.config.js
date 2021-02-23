@@ -1,4 +1,5 @@
 const path = require("path");
+const CleanPlugin = require("clean-webpack-plugin");
 
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -13,6 +14,7 @@ module.exports = {
   devServer: {
     port: 9000,
   },
+  plugins: [new CleanPlugin.CleanWebpackPlugin()],
 };
 
 /**
