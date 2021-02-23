@@ -6,7 +6,7 @@ module.exports = {
   mode: "production",
   entry: "./src/app.js",
   output: {
-    filename: "app.js",
+    filename: "[contenthash].js",
     path: path.resolve(__dirname, "assets", "scripts"),
     publicPath: "assets/scripts/",
   },
@@ -22,6 +22,8 @@ module.exports = {
  *  entry -- this is the entry point of the project
  *  output -- webpack generates file according to entry file
  *    filename -- this is the output file's filename
+ *      we change the name of the file with [contenthash] this means when we build project for production phase
+ *      webpack generates unique name for our files
  *    path -- where to store this output file
  *    publicPath -- this is the publicPath
  *
