@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.carousel {
+  width: 100vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.current-image {
+  z-index: 10;
+  opacity: 1;
+}
+
+.carousel-actions {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+button {
+  padding: 20px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: white;
+}
