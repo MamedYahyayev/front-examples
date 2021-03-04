@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+:root {
+  --navbar-bg-color: rgba(0, 0, 0, 0.76);
+  --navbar-links-color: #9b8e16;
+  --active-navbar-links-color: #ffe600;
+  --logo-color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.4em;
+}
+
+#logo {
+  color: var(--logo-color);
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  font-size: 1.7rem;
+  margin-left: 1.9em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--navbar-links-color);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.active a {
+  color: var(--active-navbar-links-color);
+}
+
+@media (max-width: 675px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    line-height: 70px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
