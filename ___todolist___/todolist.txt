@@ -1,0 +1,13 @@
+1. create new project work with tailwind css
+    Docs is available here: https://tsh.io/blog/tailwind-css-tutorial/
+
+2. Drag in Javascript
+    Docs: https://devdojo.com/tnylea/how-to-drag-an-element-using-javascript
+
+3. Dark mode in Html and css
+    Docs: https://javascript.plainenglish.io/implement-dark-mode-without-any-library-or-utility-cf2271af5837
+
+4. Typescript
+    Docs: https://tsh.io/blog/why-use-typescript/
+
+5. SSH tutorial Docs: https://tsh.io/blog/ssh-tutorial/
