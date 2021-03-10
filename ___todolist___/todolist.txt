@@ -14,3 +14,6 @@
 
 6. 5 Javascript Features ( Block statements , in keyword, template literal functions, generator functions, dynamic module imports)
    Video: https://www.youtube.com/watch?v=WIP1czLm3CY 
+
+7. Firebase Crash Course
+    Docs: https://css-tricks.com/firebase-crash-course/
