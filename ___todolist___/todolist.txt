@@ -11,3 +11,6 @@
     Docs: https://tsh.io/blog/why-use-typescript/
 
 5. SSH tutorial Docs: https://tsh.io/blog/ssh-tutorial/
+
+6. 5 Javascript Features ( Block statements , in keyword, template literal functions, generator functions, dynamic module imports)
+   Video: https://www.youtube.com/watch?v=WIP1czLm3CY 
