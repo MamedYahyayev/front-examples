@@ -1,0 +1,41 @@
+.keyframes {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: bg-change;
+  animation-duration: 3s;
+  position: relative;
+  animation-delay: 2s;
+  animation-iteration-count: 10;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bg-change {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 500px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 500px;
+    top: 500px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 500px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
