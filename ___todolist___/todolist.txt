@@ -1,5 +1,6 @@
 1. create new project work with tailwind css
     Docs is available here: https://tsh.io/blog/tailwind-css-tutorial/
+    https://devdojo.com/tnylea/tailwindcss-hidden-gems
 
 2. Drag in Javascript
     Docs: https://devdojo.com/tnylea/how-to-drag-an-element-using-javascript
@@ -17,3 +18,6 @@
 
 7. Firebase Crash Course
     Docs: https://css-tricks.com/firebase-crash-course/
+
+8. This keyword in Javascript
+    Docs: https://javascript.plainenglish.io/how-well-do-you-know-this-ce4355bc9b
